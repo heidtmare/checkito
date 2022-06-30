@@ -1,13 +1,30 @@
 package com.heidtmare.checkito;
 
-import static com.heidtmare.checkito.Checkito.*;
+import static com.heidtmare.checkito.Checkito.Null;
+import static com.heidtmare.checkito.Checkito.blank;
+import static com.heidtmare.checkito.Checkito.empty;
+import static com.heidtmare.checkito.Checkito.greaterThan;
+import static com.heidtmare.checkito.Checkito.greaterThanOrEqualTo;
+import static com.heidtmare.checkito.Checkito.is;
+import static com.heidtmare.checkito.Checkito.lessThan;
+import static com.heidtmare.checkito.Checkito.lessThanOrEqualTo;
+import static com.heidtmare.checkito.Checkito.not;
+import static com.heidtmare.checkito.Checkito.when;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
+
 import java.util.concurrent.atomic.AtomicBoolean;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
+
+import com.heidtmare.checkito.Checkito.All;
+import com.heidtmare.checkito.Checkito.None;
+import com.heidtmare.checkito.Checkito.Not;
+import com.heidtmare.checkito.Checkito.Validation;
+import com.heidtmare.checkito.Checkito.When;
 
 /**
  *
